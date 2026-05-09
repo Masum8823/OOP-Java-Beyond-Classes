@@ -49,3 +49,49 @@ One class inherits from multiple classes.
 Combination of different inheritance types.
 
 ---
+
+# Single Inheritance
+
+A child class inherits from one parent class only is called Single Inheritance.
+
+---
+
+## Flow
+
+```text
+Class A → Class B
+```
+
+(Here B gets features from A)
+
+---
+
+## Code Example:
+
+```java
+// Parent class
+class A {
+    void showA() {
+        System.out.println("This is class A");
+    }
+}
+
+// Child class
+class B extends A {
+    void showB() {
+        System.out.println("This is class B");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        B obj = new B();
+
+        obj.showA(); // inherited from A
+        obj.showB(); // own method of B
+    }
+}
+```
+
+---

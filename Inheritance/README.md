@@ -16,3 +16,36 @@ Inheritance is a concept in object-oriented programming where one class (**Sub/C
 ✅ It supports real-life relationships like **parent–child**  
 
 ---
+
+# Types of Inheritance 
+
+Java supports the following types of inheritance:
+
+| Inheritance Type | Description |
+|---|---|
+| **Single Inheritance** | One child class inherits from one parent class |
+| **Multilevel Inheritance** | A class inherits from another child class |
+| **Hierarchical Inheritance** | Multiple child classes inherit from one parent class |
+| **Multiple Inheritance** | One child class inherits from multiple parent classes |
+| **Hybrid Inheritance** | Combination of two or more inheritance types |
+
+---
+
+## List of Inheritance Types
+
+### 1️⃣ Single Inheritance
+One child class inherits from one parent class.
+
+### 2️⃣ Multilevel Inheritance
+A child class becomes the parent of another class.
+
+### 3️⃣ Hierarchical Inheritance
+Multiple child classes inherit from the same parent class.
+
+### 4️⃣ Multiple Inheritance
+One class inherits from multiple classes.
+
+### 5️⃣ Hybrid Inheritance
+Combination of different inheritance types.
+
+---

@@ -95,3 +95,53 @@ public class Main {
 ```
 
 ---
+
+# Multilevel Inheritance
+
+A child class inherits from a parent class, and that child class is also inherited by another child class, this type of inheritance is called Multilevel Inheritance.
+
+---
+
+## Flow
+
+```text
+Class A → Class B → Class C
+```
+
+(C gets features from B, and B gets from A)
+
+---
+
+## Code Example
+
+```java
+class A {
+    void showA() {
+        System.out.println("Class A");
+    }
+}
+
+class B extends A {
+    void showB() {
+        System.out.println("Class B");
+    }
+}
+
+class C extends B {
+    void showC() {
+        System.out.println("Class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+
+        obj.showA();
+        obj.showB();
+        obj.showC();
+    }
+}
+```
+
+---

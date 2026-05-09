@@ -199,3 +199,58 @@ public class Main {
 ```
 
 ---
+
+# Multiple Inheritance 
+A class tries to inherit from more than one parent class, this type of inheritance is called Multiple Inheritance.(Not directly supported in Java for classes)
+
+
+---
+
+## Flow (conceptual)
+
+```text
+Class A + Class B → Class C
+```
+
+(C gets features from both A and B)
+
+---
+
+## Note
+
+Java does not allow this with classes, but it is possible using interfaces.
+
+---
+
+## Code Example
+
+```java
+interface A {
+    void showA();
+}
+
+interface B {
+    void showB();
+}
+
+class C implements A, B {
+    public void showA() {
+        System.out.println("Interface A");
+    }
+
+    public void showB() {
+        System.out.println("Interface B");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+
+        obj.showA();
+        obj.showB();
+    }
+}
+```
+
+---

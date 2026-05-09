@@ -307,3 +307,31 @@ public class Main {
 - Supports multiple inheritance and runtime polymorphism  
 
 ---
+
+# Difference Between Abstract Class and Interface (Java)
+
+| Feature | Abstract Class | Interface |
+|---|---|---|
+| Definition | A class that has both abstract and non-abstract methods | A blueprint that contains only abstract methods (before Java 8) |
+| Keyword | `abstract` | `interface` |
+| Object creation | Cannot create object | Cannot create object |
+| Methods | Can have both abstract and concrete methods | Mostly abstract methods (default methods allowed from Java 8) |
+| Variables | Can have normal variables | Only `public static final` (constants) |
+| Inheritance | Supports single inheritance | Supports multiple inheritance |
+| Implementation keyword | Uses `extends` | Uses `implements` |
+| Constructor | Can have constructor | Cannot have constructor |
+| Access modifiers | Can use any access modifier | Methods are `public` by default |
+
+---
+
+## Summary
+
+- Abstract class = partial abstraction (mix of complete + incomplete methods)
+
+- Interface = full abstraction (mainly rules without implementation)
+
+- Abstract class is used for closely related classes
+
+- Interface is used for unrelated classes with same behavior
+
+---

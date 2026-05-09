@@ -309,3 +309,88 @@ public class Main {
 ```
 
 ---
+
+# Why Multiple Inheritance is NOT allowed in Java (for classes)?
+
+Java does not support multiple inheritance using classes because it creates ambiguity problems and makes code confusing and unsafe.
+
+---
+
+# Ambiguity problem
+
+If a class inherits from two parent classes and both parents have the same method, then Java cannot decide which method to use.
+
+---
+
+# Diamond Problem in Inheritance
+
+## Structure (problem shape)
+
+```text
+      A
+     / \
+    B   C
+     \ /
+      D
+```
+
+---
+
+## What happens
+
+- Class A has a method `show()`
+
+- Class B and C both inherit A and override `show()`
+
+- Class D inherits both B and C
+
+---
+
+## Now if D calls `show()`, Java is confused
+
+- Should it call B’s version?
+
+- Or C’s version?
+
+This confusion is called the **Diamond Problem**.
+
+---
+
+# Why Java avoids it
+
+Java avoids multiple inheritance with classes, to:
+
+- Prevent ambiguity
+
+- Avoid unpredictable behavior
+
+- Keep the language simple and safe
+
+---
+
+# Solution of Diamond Problem in Java
+
+## 1. Using Interfaces (Main Solution)
+
+Java allows multiple inheritance through interfaces because interfaces do not have implementation conflict (mostly).
+
+---
+
+## Flow
+
+```text
+Interface A
+Interface B
+Class C implements A, B
+```
+
+---
+
+## Idea
+
+- Interfaces only define methods (no confusion of implementation)
+
+- Class must define the method itself
+
+---
+

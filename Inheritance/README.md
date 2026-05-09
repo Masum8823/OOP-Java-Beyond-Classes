@@ -254,3 +254,58 @@ public class Main {
 ```
 
 ---
+
+# Hybrid Inheritance 
+
+A mix of two or more inheritance types, this type of inheritance is called Hybrid Inheritance.(Combination of multiple types)
+
+---
+
+## Flow example
+
+```text
+Class A → Class B → Class D
+Class A → Class C → Class D
+```
+
+(D gets features through multiple paths)
+
+---
+
+## Code Example (using interface + class)
+
+```java
+class A {
+    void showA() {
+        System.out.println("Class A");
+    }
+}
+
+class B extends A {
+    void showB() {
+        System.out.println("Class B");
+    }
+}
+
+interface C {
+    void showC();
+}
+
+class D extends B implements C {
+    public void showC() {
+        System.out.println("Interface C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        D obj = new D();
+
+        obj.showA();
+        obj.showB();
+        obj.showC();
+    }
+}
+```
+
+---

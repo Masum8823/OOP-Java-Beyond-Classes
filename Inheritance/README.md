@@ -145,3 +145,57 @@ public class Main {
 ```
 
 ---
+
+# Hierarchical Inheritance
+
+One parent class is inherited by multiple child classes, this type of inheritance is called Hierarchical Inheritance.
+
+---
+
+## Flow
+
+```text
+Class A → Class B
+Class A → Class C
+```
+
+(B and C both get features from A)
+
+---
+
+## Code Example
+
+```java
+class A {
+    void showA() {
+        System.out.println("Class A");
+    }
+}
+
+class B extends A {
+    void showB() {
+        System.out.println("Class B");
+    }
+}
+
+class C extends A {
+    void showC() {
+        System.out.println("Class C");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B obj1 = new B();
+        C obj2 = new C();
+
+        obj1.showA();
+        obj1.showB();
+
+        obj2.showA();
+        obj2.showC();
+    }
+}
+```
+
+---

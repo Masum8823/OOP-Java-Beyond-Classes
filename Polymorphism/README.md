@@ -239,3 +239,27 @@ Converting parent object into wrong child type
 → `ClassCastException`
 
 ---
+
+# Overloading vs Overriding 
+
+---
+
+## Feature Comparison Table:
+
+| Feature | Method Overloading | Method Overriding |
+|----------|-------------------|-------------------|
+| **Meaning** | Same method name with different parameters | Same method name with same parameters in parent and child class |
+| **Class relation** | Happens in same class | Happens in inheritance (parent-child) |
+| **Parameters** | Must be different | Must be exactly same |
+| **Return type** | Can be same or different | Must be same (or compatible) |
+| **Polymorphism type** | Compile-time polymorphism | Runtime polymorphism |
+| **Decision time** | Decided at compile time | Decided at runtime |
+| **Inheritance needed** | Not required | Required |
+| **Purpose** | Increase method flexibility | Change behavior of parent method |
+
+---
+
+## Simple Idea:
+
+- **Overloading = same name, different input (same class)**  
+- **Overriding = same name, same input (parent-child change behavior)**  

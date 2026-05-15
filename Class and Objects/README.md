@@ -167,8 +167,6 @@ public class Main {
 }
 ```
 
----
-
 #### Explanation of Example
 
 - `Student` = Class (blueprint)  

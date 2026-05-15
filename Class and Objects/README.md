@@ -97,3 +97,38 @@ Java OOP is useful because it makes programming easier, cleaner, and more powerf
 Java OOP helps developers write **organized, reusable, and real-world friendly code**.
 
 ----
+
+# Working of Class and Objects in Java (Easy Explanation)
+
+In Java, **Class and Object** work together to build programs in an organized way.
+
+
+## 1. What is a Class?
+
+A Class is like a **blueprint or design**.
+
+It does not occupy memory by itself. It only defines:
+
+- what data (variables) will be stored  
+- what actions (methods) can be done  
+
+#### Example idea:
+
+A car design paper is a class. It tells how a car should be, but it is not a real car.
+
+
+
+## 2. What is an Object?
+
+An Object is a **real instance of a class**.
+
+When we create an object:
+
+- Memory is allocated  
+- We can use data and methods  
+
+#### Example idea:
+
+A real Toyota car built from the car design is an object.
+
+---

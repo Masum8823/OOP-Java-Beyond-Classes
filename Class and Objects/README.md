@@ -176,3 +176,151 @@ public class Main {
 - `s1.showInfo()` = calling method  
 
 ---
+
+# TRICKY EXAM QUESTIONS (Class & Object)
+
+
+#### 1. What happens if we don’t create any object of a class?
+
+**Answer:**  
+No memory is allocated for variables and methods (except static members).
+
+
+
+#### 2. Can a class exist without an object?
+
+**Answer:**  
+Yes  
+
+But it has no active memory usage unless an object is created.
+
+
+
+#### 3. How many objects are created here?
+
+```java
+Student s1 = new Student();
+Student s2 = new Student();
+Student s3 = new Student();
+```
+
+**Answer:** 3 objects
+
+
+
+#### 4. Do all objects share same memory?
+
+**Answer:**  
+No  
+
+Each object has its own separate memory.
+
+
+
+#### 5. Output prediction
+
+```java
+class Test {
+    int x = 10;
+
+    void show() {
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        Test t2 = new Test();
+
+        t1.x = 20;
+
+        t1.show();
+        t2.show();
+    }
+}
+```
+
+**Answer:**
+```text
+20
+10
+```
+
+**Explanation:**
+- `t1` and `t2` are separate objects  
+- Changing `t1.x` does NOT affect `t2.x`  
+
+
+
+#### 6. Trick: What is output?
+
+```java
+class A {
+    int a = 5;
+
+    public static void main(String[] args) {
+        A obj = new A();
+        System.out.println(obj.a);
+    }
+}
+```
+
+**Answer:**
+```text
+5
+```
+
+
+#### 7. Can we create object without class?
+
+**Answer:** No  
+
+Class is required to create an object.
+
+
+
+### 8. What is stored inside an object?
+
+**Answer:**
+- Instance variables  
+- Not methods (methods are shared in memory)
+
+
+#### 9. Trick Question
+
+If 5 objects are created, how many copies of method exist?
+
+**Answer:** 1 copy (shared)
+
+
+#### 10. What is wrong here?
+
+```java
+Student.s1 = new Student();
+```
+
+**Answer:** Syntax error  
+
+**Correct form:**
+```java
+Student s1 = new Student();
+```
+
+
+
+#### 11. Can two objects have same data?
+
+**Answer:** Yes  
+
+But they still have different memory locations.
+
+
+
+#### 12. What happens when object is created?
+
+**Answer:**
+
+- Memory is allocated  
+- Constructor runs automatically  
+- Object becomes active  
+
+---

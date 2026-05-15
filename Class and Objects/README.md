@@ -1,4 +1,4 @@
-# Introduction to Java OOP (Object-Oriented Programming) in Easy Words
+# Introduction to Java OOP (Object-Oriented Programming)
 
 Java OOP means writing programs using **“objects”** instead of just step-by-step instructions.
 
@@ -98,8 +98,7 @@ Java OOP helps developers write **organized, reusable, and real-world friendly c
 
 ----
 
-# Working of Class and Objects in Java (Easy Explanation)
-
+# Working of Class and Objects in Java 
 In Java, **Class and Object** work together to build programs in an organized way.
 
 
@@ -130,5 +129,52 @@ When we create an object:
 #### Example idea:
 
 A real Toyota car built from the car design is an object.
+
+---
+
+#  How Class and Object Work Together
+
+#### Step-by-step working:
+
+- We define a class (blueprint)  
+- We create objects from that class  
+- Objects use variables and methods defined in the class  
+
+---
+
+## Simple Java Example
+
+```java
+class Student {
+    String name;
+    int age;
+
+    void showInfo() {
+        System.out.println(name + " " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student s1 = new Student();  // object creation
+
+        s1.name = "Rahim";
+        s1.age = 20;
+
+        s1.showInfo();
+    }
+}
+```
+
+---
+
+#### Explanation of Example
+
+- `Student` = Class (blueprint)  
+- `s1` = Object  
+- `new Student()` = creates memory for object  
+- `s1.name` = accessing variable  
+- `s1.showInfo()` = calling method  
 
 ---

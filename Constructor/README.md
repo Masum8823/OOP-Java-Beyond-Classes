@@ -244,3 +244,113 @@ Method
 - `void Test()` → normal method → called manually → prints "Method"  
 
 ---
+
+# 7. How many times constructor is called?
+
+```java
+class A {
+    A() {
+        System.out.println("A Constructor");
+    }
+
+    public static void main(String[] args) {
+        A obj1 = new A();
+        A obj2 = new A();
+    }
+}
+```
+
+**Answer:** 2 times  
+
+**Explanation:**  
+Each time `new A()` is used, constructor runs once.  
+So 2 objects = 2 constructor calls.
+
+---
+
+# 8. Default vs No-argument constructor
+
+**Answer:**
+
+- **Default constructor:** Provided by Java automatically if no constructor is written  
+- **No-argument constructor:** Written manually by programmer without parameters  
+
+**Explanation:**  
+Both have no parameters, but origin is different.
+
+---
+
+# 9. If no constructor is written, what happens?
+
+**Answer:** Java creates a default constructor automatically.  
+
+**Explanation:**  
+It initializes default values like:
+
+- `int = 0`  
+- `String = null`  
+
+---
+
+# 10. Can we overload constructors and methods?
+
+**Answer:** Yes, both can be overloaded.  
+
+**Explanation:**
+- Constructor overloading → multiple constructors with different parameters  
+- Method overloading → multiple methods with same name but different parameters  
+
+---
+
+# 11. What is wrong in this code?
+
+```java
+class Demo {
+    void Demo() {
+        System.out.println("This is method");
+    }
+}
+```
+
+**Answer:** It is not a constructor.  
+
+**Explanation:**  
+Because it has `void`, so it's a method.  
+Constructors cannot have return type.
+
+---
+
+# 12. Output prediction
+
+```java
+class Test {
+    Test() {
+        System.out.println("Constructor");
+    }
+
+    Test(int x) {
+        System.out.println(x);
+    }
+
+    void show() {
+        System.out.println("Method");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test(10);
+        t.show();
+    }
+}
+```
+
+**Answer:**
+```text
+10
+Method
+```
+
+**Explanation:**
+- `Test(10)` → parameterized constructor runs → prints 10  
+- `show()` → method call → prints "Method"  
+
+---

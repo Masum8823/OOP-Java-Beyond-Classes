@@ -62,3 +62,23 @@ Unknown 0
 ```
 
 ---
+
+# 6. Key Points
+
+- Constructor runs automatically  
+- Used for object initialization  
+- Same name as class  
+- No return type  
+- Can be overloaded (multiple constructors)  
+
+---
+
+# 7. Real-Life Example
+
+Think like this:
+
+- **Class** = Mobile design  
+- **Constructor** = Initial setup (battery full, settings ready)  
+- **Object** = Actual mobile you use  
+
+---

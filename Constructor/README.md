@@ -82,3 +82,84 @@ Think like this:
 - **Object** = Actual mobile you use  
 
 ---
+
+# Constructor vs Method in Java (Easy Differences)
+
+Both constructor and method are used inside a class, but they are not the same.
+
+---
+
+# 1. Basic Meaning
+
+- **Constructor**: Used to initialize an object  
+- **Method**: Used to perform actions or tasks  
+
+---
+
+# 2. Key Differences
+
+| Feature | Constructor | Method |
+|---|---|---|
+| Purpose | Initialize object | Perform operations |
+| Name | Same as class name | Any valid name |
+| Return type | No return type (not even `void`) | Must have return type |
+| Call | Automatically called | Must be called manually |
+| Frequency | Called once per object creation | Can be called multiple times |
+| Inheritance | Not inherited | Can be inherited |
+| Overloading | Can be overloaded | Can be overloaded |
+
+---
+
+# 3. Example
+
+## Constructor Example:
+
+```java
+class Student {
+    String name;
+
+    Student() {   // constructor
+        name = "Unknown";
+    }
+}
+```
+
+👉 Runs automatically when object is created
+
+---
+
+## Method Example:
+
+```java
+class Student {
+    String name;
+
+    void show() {   // method
+        System.out.println(name);
+    }
+}
+```
+
+👉 Must be called like:
+
+```java
+s1.show();
+```
+
+---
+
+# 4. Simple Understanding
+
+- Constructor = “Object setup system”  
+- Method = “Work doing system”  
+
+---
+
+# 5. Real-Life Example
+
+| Real Life | Constructor | Method |
+|---|---|---|
+| Mobile | Initial setup (language, time) | Calling, messaging |
+| Student | Assign initial data | Studying, playing |
+
+---

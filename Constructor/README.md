@@ -354,3 +354,37 @@ Method
 - `show()` → method call → prints "Method"  
 
 ---
+
+# 13. Why constructor has no return type?
+
+**Answer:**  
+Because its purpose is only to initialize objects, not return values.
+
+---
+
+# 14. Which is faster: constructor or method?
+
+**Answer:** Both are fast, but constructor runs only once per object.  
+
+**Explanation:**  
+Constructor is used once during object creation, methods can run many times.
+
+---
+
+# 15. Can constructor be inherited?
+
+**Answer:** No  
+
+**Explanation:**  
+Constructors are not inherited, but child class can call parent constructor using `super()`.
+
+---
+
+# 16. What is constructor overloading?
+
+**Answer:** Having multiple constructors with different parameters in the same class.  
+
+**Explanation:**  
+It allows creating objects in different ways.
+
+---

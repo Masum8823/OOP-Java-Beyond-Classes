@@ -163,3 +163,84 @@ s1.show();
 | Student | Assign initial data | Studying, playing |
 
 ---
+
+# Constructor (Tricky Questions)
+
+---
+
+# 1. Can a constructor have a return type? Why?
+
+**Answer:** No  
+
+**Explanation:**  
+A constructor has no return type, not even `void`. If you add a return type, Java treats it as a normal method, not a constructor.
+
+---
+
+# 2. What happens if we add void in a constructor?
+
+**Answer:** It becomes a method, not a constructor.  
+
+**Explanation:**  
+Constructor must not have any return type. So `void ClassName()` is just a method.
+
+---
+
+# 3. Can we call a constructor like a normal method?
+
+**Answer:** No  
+
+**Explanation:**  
+Constructor is called automatically only when object is created using `new` keyword.
+
+---
+
+# 4. Why is constructor name same as class name?
+
+**Answer:** To identify it as a constructor.  
+
+**Explanation:**  
+Java uses the rule “same name as class + no return type” to differentiate constructor from methods.
+
+---
+
+# 5. Can a constructor be static or final?
+
+**Answer:** No  
+
+**Explanation:**
+- `static` is not allowed because constructor belongs to object, not class  
+- `final` is not allowed because constructors cannot be inherited or overridden  
+
+---
+
+# 6. Output of program
+
+```java
+class Test {
+    Test() {
+        System.out.println("Constructor");
+    }
+
+    void Test() {
+        System.out.println("Method");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.Test();
+    }
+}
+```
+
+**Answer:**
+```text
+Constructor
+Method
+```
+
+**Explanation:**
+- `Test()` → constructor runs automatically → prints "Constructor"  
+- `void Test()` → normal method → called manually → prints "Method"  
+
+---
